@@ -1,0 +1,87 @@
+*{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.attribution { 
+    margin-top: 2px;
+    font-size: 11px; text-align: center;
+    a { color: hsl(228, 45%, 44%); }
+}
+section{
+    width:100%;
+    padding:5%;
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 2rem;
+    }
+    h1{
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .button{
+        display:inline-block;
+        background-color:hsl(0, 0%, 95%);
+        border: hsl(0, 0%, 95%) 2px solid;
+        border-radius: 50px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        transition: background-color 0.4s, color 0.4s;
+    }
+
+    .btn1{
+        color:hsl(31, 77%, 52%);
+    }
+    .btn2{
+        color: hsl(184, 100%, 22%);
+    }
+    .btn3{
+        color: hsl(179, 100%, 13%);
+    }
+
+    h1, .button{
+        margin: 10%;
+    }
+    h1, .button:hover{
+        color: hsl(0, 0%, 95%)
+    }
+    p, .button{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width:1000px){
+    main{
+        width: 75%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    section{
+        display:inline-block;
+        width: 33%;
+        margin: -2px;
+    }
+    .button:hover{
+        background-color: inherit;
+        cursor: pointer;
+    }
+}
